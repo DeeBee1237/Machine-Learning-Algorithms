@@ -1,0 +1,7 @@
+Instructions for Running the K Means Clustering Program:
+
+Open the command line, navigate to this Directory (KMeansClustering) and type:
+
+java -jar KMeansClustering.jar
+
+No user input is needed. The program will read the training file, and make three clusters. It will then display how many of each of the training instances are in the clusters. 

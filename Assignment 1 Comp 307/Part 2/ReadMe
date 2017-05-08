@@ -1,0 +1,9 @@
+Instructions for the Decision Tree Program:
+
+On the Command Line, navigate to this Directory (Part 2) and type  
+
+java -jar DecisionTree.jar
+
+The program will then ask you for the names of the training and test sets that you want to use. Please enter the file names correctly and then the program will run.
+
+The output will be the learned decision tree classifier, as well as the predictions it made on the test set, plus a summary of how many predictions were correct.

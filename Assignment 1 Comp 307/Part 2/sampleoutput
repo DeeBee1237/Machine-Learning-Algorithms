@@ -1,0 +1,168 @@
+Please Enter the name of your training data file: 
+hepatitis-training.dat
+Please Enter the name of your test data file: 
+hepatitis-test.dat
+The Decision Tree: 
+---------------------------------------------
+
+If: ASCITES == true: 
+   If: SPIDERS == true: 
+      If: VARICES == true: 
+         If: FIRMLIVER == true: 
+            Then Live
+         If: FIRMLIVER == false: 
+            If: BIGLIVER == true: 
+               If: STEROID == true: 
+                  Then Live
+               If: STEROID == false: 
+                  If: SGOT == true: 
+                     Then Live
+                  If: SGOT == false: 
+                     If: HISTOLOGY == true: 
+                        Then Die
+                     If: HISTOLOGY == false: 
+                        If: MALAISE == true: 
+                           Then Live
+                        If: MALAISE == false: 
+                           If: ANOREXIA == true: 
+                              Then Die
+                           If: ANOREXIA == false: 
+                              Then Live
+            If: BIGLIVER == false: 
+               Then Live
+      If: VARICES == false: 
+         Then Die
+   If: SPIDERS == false: 
+      If: FEMALE == true: 
+         Then Live
+      If: FEMALE == false: 
+         If: FIRMLIVER == true: 
+            If: SGOT == true: 
+               Then Live
+            If: SGOT == false: 
+               If: HISTOLOGY == true: 
+                  Then Die
+               If: HISTOLOGY == false: 
+                  If: ANOREXIA == true: 
+                     Then Die
+                  If: ANOREXIA == false: 
+                     Then Live
+         If: FIRMLIVER == false: 
+            If: SGOT == true: 
+               If: BIGLIVER == true: 
+                  If: SPLEENPALPABLE == true: 
+                     Then Live
+                  If: SPLEENPALPABLE == false: 
+                     If: ANOREXIA == true: 
+                        Then Die
+                     If: ANOREXIA == false: 
+                        Then Live
+               If: BIGLIVER == false: 
+                  Then Die
+            If: SGOT == false: 
+               Then Live
+If: ASCITES == false: 
+   If: BIGLIVER == true: 
+      If: STEROID == true: 
+         Then Die
+      If: STEROID == false: 
+         If: ANOREXIA == true: 
+            Then Die
+         If: ANOREXIA == false: 
+            Then Live
+   If: BIGLIVER == false: 
+      Then Live
+---------------------------------------------
+
+
+BaseLine Classifier (Live): 85.18518518518519%
+
+Tree Predictions: 
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Die
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Die
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Die
+Decision tree prediction of what will happen: Die
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Die
+Decision tree prediction of what will happen: Die
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Die
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Live
+
+what actually happens on this test instance: Live
+Decision tree prediction of what will happen: Die
+
+---------------------------------------------
+
+Total Number of test instances: 27
+Total Number of correct predictions: 23
+Percentage of correct predictions: 85.18518518518519%
+

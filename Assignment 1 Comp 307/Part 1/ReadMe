@@ -1,0 +1,10 @@
+
+Instructions for Running the KNN Program:
+
+Open the command line, navigate to this Directory (Part 1) and type:
+
+java -jar KNN.jar
+
+The program will ask you for a value to use for K. Please enter the number (1, 2 etc) you want.
+
+The Program will ask you for the names of the training and test set files. Once you have entered their names, the program will run and display the results.

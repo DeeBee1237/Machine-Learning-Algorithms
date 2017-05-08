@@ -1,0 +1,9 @@
+Instructions for running the Perceptron Program:
+
+On the Command Line, Navigate to this Directory (Part 3) and type in:
+
+java -jar Perceptron.jar
+
+The program will ask you for an image file (Please Note: If you would like to use other image files, add them to this directory!). Enter the name of the image file, and the program will run.
+
+The program will generate 50 random features, for each of the images in the data file. The Perceptron will then learn the weights it needs in order to classify as many of the images as possible. If the Perceptron can do it in less than 1000 training cycles, the number of cycles to convergence, as well as the final weights are printed. Otherwise, only the final weights are printed and of course the random features generated for each image, as well as a list of correctly and incorrectly classified images.
